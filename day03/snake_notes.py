@@ -43,9 +43,9 @@ title_rect.center = (WINDOW_WIDTH // 2,
 
 # TODO: make a score_text object and assign a font render to it with text "Score: 0", antialias of True, color of GREEN, background color of DARKRED
 # TODO: make a score_rect object by assigning score_text.get_rect() to it.
-# TODO: place the topleft of score_rect to an x coordinate of 10 and y coordinate of 10
+# TODO: place the top left of score_rect to an x coordinate of 10 and y coordinate of 10
 
-# TODO: make a game_over_text object and assign a font render to it with text "GAMEOVER", antialias of True, color of RED, background color of DARKRED
+# TODO: make a game_over_text object and assign a font render to it with text "GAME OVER", antialias of True, color of RED, background color of DARKRED
 # TODO: make a game_over_rect object by assigning game_over_text.get_rect() to it.
 # TODO: place the center of game_over_rect to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT
 
@@ -54,7 +54,7 @@ title_rect.center = (WINDOW_WIDTH // 2,
 # TODO: place the center of continue_rect  to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT + 64
 
 # Set sounds and music
-pick_up_sound = pygame.mixer.Sound("pickup_sound.wav")
+pick_up_sound = pygame.mixer.Sound("pick_sound.wav")
 
 # Set images (in this case, use simple rects...so just create their coordinates)
 # For a rectangle you need (top-left x, top-left y, width, height)
@@ -89,7 +89,7 @@ while running:
     # TODO: same todo just ran out of room:  use same settings for alias, color, and background color
 
     # Fill the surface
-    # TODO: Read below.  One TODO, require's explanation
+    # TODO: Read below.  One TODO, require explanation
     ''' 
     The display_surface has a function we can use called fill, which takes one color argument.  
     The act of using display_surface's fill is said as
@@ -99,7 +99,7 @@ while running:
     '''
 
     # Blit HUD
-    # TODO: Read below.  2 TODO's, require's explanation
+    # TODO: Read below.  2 TODO's, require explanation
     '''
     Blitting means copying an image from it's source (the code) to it's destination (the display) 
     This is necessary after updating the source (score changes, snake, and apple change etc.)
@@ -112,7 +112,7 @@ while running:
 
 
     # Blit assets
-    # TODO: Read below.  2 TODO's, require's explanation
+    # TODO: Read below.  2 TODO's, require explanation
     '''
     Calling pygame.draw.rect is a way to blit rectangles.  
     The blit function for display_surface is for direct blitting.  
@@ -122,7 +122,7 @@ while running:
     '''
 
     # Update display and tick clock
-    # TODO: Read below. 2 TODO's, require's explanation
+    # TODO: Read below. 2 TODO's, require explanation
     '''
     1. Now we update the display by calling pygame.display's update function passing in no arguments.
     
