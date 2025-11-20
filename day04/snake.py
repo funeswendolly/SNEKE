@@ -1,5 +1,7 @@
 
-import pygame, random
+import pygame
+
+from day04.snake_notes import body_coords
 
 # Initialize pygame
 pygame.init()
@@ -67,10 +69,25 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
+    # Move the snake
+    if event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_LEFT:
+            snake_dx = -1 * SNAKE_SIZE
+            snake_dy = 0
+        if  event.key == pygame.K_RIGHT:
+            snake_dx = SNAKE_SIZE
+            snake_dy = 0
+        if event.type == pygame.KEYUP:
+            snake_dx = 0
+            snake_dy = -1 * SNAKE_SIZE
+        if event.key == pygame.K_DOWN:
+            snake_dy = 0
+            snake_dx = SNAKE_SIZE
 
-# Move the snake
 # Add the head coordinate to the first index of the body coordinate list
 # This will essentially move all the snakes body by one position in the list
+body_coords. insert(0,head_coord)
+head_coord.pop(0)
 # Update the x,y position of the snakes head and make a new coordinate
 
 # Check for game over
